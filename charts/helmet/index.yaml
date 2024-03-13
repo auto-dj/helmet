@@ -6,7 +6,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 2.19.0
-    created: "2024-03-14T00:09:45.416728+01:00"
+    created: "2024-03-14T00:23:59.172535+01:00"
     description: A Library Helm Chart for grouping common logic between bitnami charts.
       This chart is not deployable by itself.
     digest: 89e4008ba84ebc4b1838b7266bd991958f57eedb841e9268726de971dc78cfd1
@@ -26,6 +26,30 @@ entries:
     - https://github.com/bitnami/charts
     type: library
     urls:
-    - charts/common-2.19.0.tgz
+    - https://auto-dj.github.io/helmet/charts/helmet/charts/common-2.19.0.tgz
     version: 2.19.0
-generated: "2024-03-14T00:09:45.415457+01:00"
+  helmet:
+  - apiVersion: v2
+    appVersion: 0.11.0
+    created: "2024-03-14T00:23:59.171908+01:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Helmet is a library Helm Chart for grouping common logics. This chart
+      is not deployable by itself.
+    digest: cf7d5f2db62457ef2229dd67c24b2bb34ddc4c62f227fe022e4851621e59139b
+    home: https://github.com/auto-dj/helmet/blob/main/charts/helmet
+    keywords:
+    - common
+    - helper
+    - template
+    - function
+    name: helmet
+    type: library
+    urls:
+    - https://auto-dj.github.io/helmet/charts/helmet/helmet-0.11.0.tgz
+    version: 0.11.0
+generated: "2024-03-14T00:23:59.170085+01:00"

@@ -1,7 +1,7 @@
 apiVersion: v2
 name: helmet
 description: Helmet is a library Helm Chart for grouping common logics. This chart is not deployable by itself.
-home: https://github.com/companyinfo/helm-charts/blob/main/charts/helmet
+home: https://github.com/auto-dj/helmet/blob/main/charts/helmet
 type: library
 version: "0.11.0"
 appVersion: "0.11.0"
@@ -10,10 +10,9 @@ keywords:
   - helper
   - template
   - function
-maintainers:
-  - name: Company.info Developers
-    url: https://company.info
 dependencies:
   - name: common
-    version: "2.6.0"
-    repository: "https://charts.bitnami.com/bitnami"
+    repository: oci://registry-1.docker.io/bitnamicharts
+    tags:
+    - bitnami-common
+    version: 2.x.x
